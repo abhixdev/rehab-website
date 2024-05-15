@@ -7,6 +7,160 @@
     <link href="main.css" rel="stylesheet" />
   </head>
   <body class="bg-MainBackgroundColor font-medium">
-    <h1>Hello World! Lets start our Project.</h1>
+    <!-- Homepage Screen -->
+
+    <div
+      class="flex h-screen flex-col justify-between bg-[url('./assets/hero-mobile.png')] bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        class="flex h-20 items-center justify-between border-b border-[#FFFFFF] border-opacity-10 bg-[#DDDDDD] bg-opacity-10 px-4 py-3 shadow-md"
+      >
+        <div class="flex items-center space-x-2">
+          <!-- Logo -->
+          <img class="h-8" src="./assets/Logo-White.svg" alt="" />
+          <p class="text-xs uppercase text-white">
+            Addiction Rehab <br />
+            Centers
+          </p>
+        </div>
+        <a class="rounded-xl bg-[#EEEEEF] px-4 py-3 text-[#202020]" href="#"
+          >Get in touch</a
+        >
+      </div>
+      <div class="headline-content w-full">
+        <p
+          class="mx-4 text-[35px] uppercase leading-10 tracking-tighter text-[#EEEEEF]"
+        >
+          Are you <br />
+          hoping for a <br />
+          better tomorrow?
+        </p>
+        <div
+          class="mt-6 flex items-center justify-center border-t-2 border-[#EEEEEF] border-opacity-50"
+        >
+          <a
+            class="mx-4 my-5 w-full rounded-xl bg-white py-3 text-center"
+            href="#"
+            >CALL US 866-569-0461</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome to Arc -->
+    <div>
+      <section class="mx-4 my-12 flex flex-col space-y-6">
+        <div class="w-full rounded-xl bg-[#1F3028] bg-opacity-5">
+          <img class="px-4 py-5" src="./assets/tag-1.png" alt="" />
+        </div>
+
+        <div class="tagline flex flex-col space-y-2">
+          <div
+            class="w-fit rounded-lg border border-[#1F3028] border-opacity-10 bg-[#1F3028] bg-opacity-[2%] px-3 py-2"
+          >
+            <p class="text-sm uppercase text-[#1F3028] text-opacity-80">
+              WELCOME TO ARC
+            </p>
+          </div>
+          <h1 class="text-2xl">
+            Your haven of healing, hope,<br />
+            and harmony.
+          </h1>
+          <p class="pt-2 tracking-tighter text-[#1F3028] text-opacity-80">
+            Discover a world of compassion, comfort and care, in the center of
+            Indianapolis. An oasis of solace and serenity; where birds chirp,
+            flowers bloom, and hope sprouts anew. <br /><br />
+            And where a staff composed of experts in the field of addiction, are
+            all dedicated solely to see you succeed.<br /><br />
+            With personalized care, upscale accommodations and modern amenities;
+            it's a place where nothing else matters, other than you and your
+            success.
+          </p>
+          <div class="mt-6 flex items-center justify-center text-white">
+            <a
+              class="mx-4 my-5 w-full rounded-xl bg-[#1F3028] py-3 text-center"
+              href="#"
+              >CALL US 866-569-0461<span
+                ><img
+                  class="ml-4 inline"
+                  src="./assets/button-drop.svg"
+                  alt="" /></span
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Grid Sections -->
+
+    <div class="mx-4 grid grid-cols-2 gap-4">
+      <div id="grid-item" class="border[#1F3028] rounded-xl border shadow-lg">
+        <div class="flex flex-col space-y-3 p-3">
+          <!-- Icon -->
+          <img class="w-14" src="./assets/Grid-Icon-1.svg" alt="" />
+          <p class="text-lg tracking-tighter">
+            Individual / Group Therapy Sessions
+          </p>
+        </div>
+      </div>
+      <div id="grid-item" class="border[#1F3028] rounded-xl border shadow-lg">
+        <div class="flex flex-col space-y-3 p-3">
+          <!-- Icon -->
+          <img class="w-14" src="./assets/Grid-Icon-2.svg" alt="" />
+          <p class="text-lg tracking-tighter">Alcohol & Drug Treatment</p>
+        </div>
+      </div>
+      <div id="grid-item" class="border[#1F3028] rounded-xl border shadow-lg">
+        <div class="flex flex-col space-y-3 p-3">
+          <!-- Icon -->
+          <img class="w-14" src="./assets/Grid-Icon-3.svg" alt="" />
+          <p class="text-lg tracking-tighter">
+            Holistic <br />
+            Recovery
+          </p>
+        </div>
+      </div>
+      <div id="grid-item" class="border[#1F3028] rounded-xl border shadow-lg">
+        <div class="flex flex-col space-y-3 p-3">
+          <!-- Icon -->
+          <img class="w-14" src="./assets/Grid-Icon-4.svg" alt="" />
+          <p class="text-lg tracking-tighter">Family-Centered Approach</p>
+        </div>
+      </div>
+      <div id="grid-item" class="border[#1F3028] rounded-xl border shadow-lg">
+        <div class="flex flex-col space-y-3 p-3">
+          <!-- Icon -->
+          <img class="w-14" src="./assets/Grid-Icon-5.svg" alt="" />
+          <p class="text-lg tracking-tighter">Luxurious Accommodations</p>
+        </div>
+      </div>
+      <div id="grid-item" class="border[#1F3028] rounded-xl border shadow-lg">
+        <div class="flex flex-col space-y-3 p-3">
+          <!-- Icon -->
+          <img class="w-14" src="./assets/Grid-Icon-6.svg" alt="" />
+          <p class="text-lg tracking-tighter">Aftercare Support</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Facility-->
+    <section class="mx-4 my-44">
+      <div
+        class="w-fit rounded-lg border border-[#1F3028] border-opacity-10 bg-[#1F3028] bg-opacity-[2%] px-3 py-2"
+      >
+        <p class="text-sm uppercase text-[#1F3028] text-opacity-80">
+          Our facility
+        </p>
+      </div>
+      <h1 class="mb-4 mt-2 text-2xl capitalize tracking-wide">
+        Our state-of-the-art facility offer lavish comfort and modern amenities
+        to enhance your recovery experience.
+      </h1>
+      <img
+        class="w-full rounded-xl bg-cover bg-center bg-no-repeat shadow-xl"
+        src="./assets/tag-2.png"
+        alt=""
+      />
+    </section>
   </body>
 </html>
