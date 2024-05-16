@@ -361,33 +361,35 @@
 
           <form class="mt-4 flex flex-col justify-center space-y-4">
             <input
-              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-[#1F3028] text-opacity-50 shadow focus:outline-black"
+              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-black placeholder-[#1F3028] placeholder-opacity-50 shadow focus:outline-black"
               id="firstname"
               type="text"
               placeholder="Your name"
             />
             <input
-              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-[#1F3028] text-opacity-50 shadow focus:outline-black"
+              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-black placeholder-[#1F3028] placeholder-opacity-50 shadow focus:outline-black"
               id="lastname"
               type="text"
               placeholder="Last name"
             />
             <input
-              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-[#1F3028] text-opacity-50 shadow focus:outline-black"
+              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-black placeholder-[#1F3028] placeholder-opacity-50 shadow focus:outline-black"
               id="email"
               type="email"
               placeholder="Your email"
             />
             <input
-              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-[#1F3028] text-opacity-50 shadow focus:outline-black"
+              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-black placeholder-[#1F3028] placeholder-opacity-50 shadow focus:outline-black"
               id="phone"
               type="tel"
+              max="9999999999"
+              oninput="if(this.value.length > 13) this.value = this.value.slice(0, 13);"
               placeholder="Your phone"
             />
             <textarea
               id="message"
               rows="6"
-              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-[#1F3028] text-opacity-50 shadow focus:outline-black"
+              class="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-3 leading-tight text-black placeholder-[#1F3028] placeholder-opacity-50 shadow focus:outline-black"
               placeholder="Your message"
             ></textarea>
 
@@ -512,12 +514,20 @@
         <p>Terms of use</p>
       </div>
       <p class="my-6 text-center text-sm">
-        &copy; 2024 Addiction Rehab Centers | All Rights Reserved | Powered by
-        LucidCR.com
+        &copy; <span id="thisYear"></span> Addiction Rehab Centers | All Rights
+        Reserved | Powered by LucidCR.com
       </p>
       <div class="flex items-center justify-center">
         <img class="w-fit" src="./assets/legit-script.svg" alt="" />
       </div>
     </section>
   </body>
+  <script>
+    // Get the current year
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+
+    // Find the span element by its ID
+    document.getElementById("thisYear").textContent = currentYear;
+  </script>
 </html>
