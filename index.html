@@ -17,36 +17,70 @@
     <!-- Homepage Screen -->
 
     <div
-      class="flex h-svh flex-col justify-between bg-[url('./assets/hero-mobile.png')] bg-cover bg-center bg-no-repeat"
+      class="flex h-svh flex-col justify-between bg-[url('./assets/hero-mobile.png')] bg-cover bg-center bg-no-repeat md:bg-[url('./assets/hero-desktop.png')]"
     >
       <div
-        class="flex h-20 items-center justify-between border-b border-[#FFFFFF] border-opacity-10 bg-[#DDDDDD] bg-opacity-10 px-4 py-3 shadow-md"
+        class="top-navigation flex flex-col border-b border-[#FFFFFF] border-opacity-10 bg-[#DDDDDD] bg-opacity-10 shadow-md"
       >
-        <div class="flex items-center space-x-2">
-          <!-- Logo -->
-          <img class="h-8" src="./assets/Logo-White.svg" alt="" />
-          <p class="text-xs uppercase text-white">
-            Addiction Rehab <br />
-            Centers
-          </p>
-        </div>
-        <a class="rounded-xl bg-[#EEEEEF] px-4 py-3 text-[#202020]" href="#"
-          >Get in touch</a
+        <!-- Top Section // Location and Social Icons -->
+        <div
+          class="hidden h-10 justify-between border-b border-white border-opacity-40 px-12 py-2 text-sm text-white md:flex"
         >
+          <div class="left-location flex space-x-4">
+            <p>Indianapolis, IN</p>
+            <img class="w-1.5" src="./assets/dot.svg" alt="" />
+            <p>24/7 Admissions</p>
+          </div>
+          <div class="right-icons flex space-x-2">
+            <img class="h-5" src="./assets/instagram-white.svg" alt="" />
+            <img class="h-5" src="./assets/facebook-white.svg" alt="" />
+            <img class="h-5" src="./assets/twitter-white.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- Nav Links and Anchor Link  -->
+        <div
+          class="flex h-20 flex-auto items-center justify-between px-4 py-3 md:px-12"
+        >
+          <div class="flex items-center space-x-2">
+            <!-- Logo -->
+            <img class="h-8" src="./assets/Logo-White.svg" alt="" />
+            <p class="text-xs uppercase text-white">
+              Addiction Rehab <br />
+              Centers
+            </p>
+            <div
+              class="border-left hidden h-8 rounded-lg border-[1px] border-white md:block"
+            ></div>
+            <div class="hidden space-x-2 text-sm text-white md:flex">
+              <a href="#home">Home</a>
+              <a href="#Facility">Facility</a>
+              <a href="#Testimonials">Testimonials</a>
+              <a href="#Insurances">Insurances</a>
+              <a href="#Contact">Contact Us</a>
+            </div>
+          </div>
+          <a
+            class="rounded-xl bg-[#EEEEEF] px-4 py-3 text-center text-[#202020]"
+            href="#"
+            >Get in touch</a
+          >
+        </div>
       </div>
+
       <div class="headline-content w-full">
         <p
-          class="mx-4 text-[35px] uppercase leading-10 tracking-tighter text-[#EEEEEF]"
+          class="mx-4 text-[35px] uppercase leading-10 tracking-tighter text-[#EEEEEF] md:mx-12 md:text-[64px] md:leading-none md:tracking-tight"
         >
           Are you <br />
           hoping for a <br />
           better tomorrow?
         </p>
         <div
-          class="mt-6 flex items-center justify-center border-t-2 border-[#EEEEEF] border-opacity-50"
+          class="mt-6 flex items-center justify-center border-t-2 border-[#EEEEEF] border-opacity-50 md:justify-start"
         >
           <a
-            class="mx-4 my-5 w-full rounded-xl bg-white py-3 text-center"
+            class="mx-4 my-5 w-full rounded-xl bg-white py-3 text-center md:mx-12 md:max-w-fit md:px-5"
             href="#"
             >CALL US 866-569-0461</a
           >
@@ -58,7 +92,7 @@
     <div>
       <section class="mx-4 my-12 flex flex-col space-y-6">
         <div class="w-full rounded-xl bg-[#1F3028] bg-opacity-5">
-          <img class="px-4 py-5" src="./assets/tag-1.png" alt="" />
+          <img class="w-full px-4 py-5" src="./assets/tag-1.png" alt="" />
         </div>
 
         <div class="tagline flex flex-col space-y-2">
